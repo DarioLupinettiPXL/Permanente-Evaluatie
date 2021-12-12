@@ -32,14 +32,13 @@ nav ul li a:hover {
 h1 {
     color: white;
     background-color: rgba(0,0,0,.4);
-    margin-top: 20px;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 20px auto 20px auto;
     padding: 10px;
     text-align: center;
     width: 500px;
     border: 2px solid #27426d;
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
+    font-size: 24pt;
 }
 p {
     margin-top: 20px;
@@ -52,13 +51,14 @@ nav {
 body {
     background-color: whitesmoke;
     position: relative;
-    top: 95px
+    top: 95px;
 }
 footer {
     color: white;
     background-color: #295498;
     padding: 20px;
     text-align: left;
+    bottom: 0;
 }
 footer p {
     margin: auto;
@@ -92,12 +92,22 @@ form {
     padding: 10px;
 }
 .menu {
+    margin-top: 60px;
     margin-left: 50px;
     list-style-type: circle;
     padding: 10px;
+    font-size: 14pt;
+}
+.menufoto {
+    display: block;
+    margin: 70px 20px 100px 50px;
+    width: 35%;
+    border: 4px solid #000;
+    float: right;
 }
 .menutekst {
-    margin-left: 20px;
+    margin-left: 14px;
+    float: left;
 }
 @media screen and (max-width: 1000px) {
     nav ul li {
@@ -111,4 +121,32 @@ form {
     nav ul {
         font-size: 10pt;
     }
+}
+table {
+    border-spacing: 1px;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 6px;
+    overflow: hidden;
+    max-width: 800px;
+    width: 100%;
+    margin: 20px auto;
+    position: relative;
+}
+td,th {
+    padding-left:8px;
+    text-align: center;
+}
+thead tr {
+    height: 60px;
+    background: #677bff;
+    font-size: 16px;
+}
+tbody tr {
+    height: 48px;
+    border-bottom: 1px solid #E3F1D5;
+}
+td:first-child {
+    text-align: left;
+    color: #00aaf1;
 }
