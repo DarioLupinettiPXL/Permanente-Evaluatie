@@ -16,13 +16,26 @@
         <li><a href="contactpagina.html">Contactpagina</a></li>
     </ul>
 </nav>
-<main>
-    <section>
-        <form>
-            <label>Gebruikersnaam</label>
-            <br><input name="username" id="username" pattern="[A-Za-z0-9]+">
+<main class="achtergrondblauw">
+    <p id="logintekst">Voor meer informatie klikt u op onderstaande knop:</p><br><br><br>
+    <!--bron: w3schools-->
+    <button id="login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Contact opnemen</button>
+
+    <div id="id01" class="modal">
+        <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            </div>
+            <div class="container">
+                <label for="uname"><b>Gebruikersnaam</b></label>
+                <input type="text" placeholder="Geef gebruikersnaam in" name="uname" nodig>
+
+                <label for="psw"><b>Wachtwoord</b></label>
+                <input type="password" placeholder="Geef wachtwoord in" name="psw" nodig>
+            </div>
         </form>
-    </section>
+    </div>
+    <img id="catering" src="images/catering.jpg" alt="Foto van PXL - Catering">
 </main>
 <footer>
     <aside><img class="pxllogo2" id="pxllogo2" src="images/1314_logo_pxl_bol.png" alt="PXL - logo"/></aside>
