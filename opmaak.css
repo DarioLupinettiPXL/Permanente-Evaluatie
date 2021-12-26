@@ -3,12 +3,15 @@
     padding: 0;
     font-family: Arial, Verdana, sans-serif;
 }
+.background {
+    background-color: slategray;
+}
 nav ul {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
     font-size: 20pt;
     list-style-type: none;
     background-color: #295498;
@@ -27,8 +30,9 @@ nav ul li a {
 nav ul li a:hover {
     background-color: black;
     color: white;
-    font-weight: bold;
-    font-style: italic;
+    transition: 0.5s;
+    opacity: 0.7;
+    transform: scale(1.05);
 }
 h1 {
     color: white;
@@ -38,7 +42,7 @@ h1 {
     text-align: center;
     width: 500px;
     border: 2px solid #27426d;
-    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
     font-size: 24pt;
 }
 p {
@@ -71,6 +75,11 @@ aside {
 .pxllogo1 {
     width: 100px;
     margin-left: 20px;
+}
+.pxllogo1:hover {
+    transform: scale(0.8);
+    transition: 0.5s;
+    opacity: 0.7;
 }
 .pxllogo2 {
     width: 100px;
@@ -134,6 +143,7 @@ table {
     margin: 20px auto;
     position: relative;
     z-index: -1;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
 }
 td,th {
     padding-left:8px;
